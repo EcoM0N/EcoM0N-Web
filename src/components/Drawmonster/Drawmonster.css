@@ -1,0 +1,50 @@
+.Right {
+  left: 80px;
+  top: -30px;
+  z-index: 2;
+  position: fixed;
+  animation: vibration 0.3s infinite;
+}
+.Drawmonster {
+  text-align: center;
+}
+.pish {
+  z-index: 9;
+  top: 200px;
+  left: 450px;
+  position: fixed;
+}
+.pishText {
+  top: 570px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bold;
+
+  z-index: 9;
+  position: relative;
+}
+
+@keyframes shrinkAndGrow {
+  0% {
+    transform: scale(0.5);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate {
+  animation: shrinkAndGrow 0.9s ease-in-out;
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-1deg);
+  }
+}

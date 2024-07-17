@@ -1,0 +1,29 @@
+.signUpBack {
+  text-align: center;
+  position: relative;
+  > input {
+    width: 400px;
+    height: 67px;
+
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+
+    padding-left: 20px;
+
+    top: 480px;
+    left: 520px;
+
+    z-index: 1;
+    position: absolute;
+  }
+  > input ::placeholder {
+    color: #cacaca;
+  }
+}
+
+.signUpnBackImg {
+  width: 1410px;
+  right: 40px;
+  position: fixed;
+}

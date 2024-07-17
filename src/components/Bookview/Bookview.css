@@ -1,0 +1,73 @@
+.backView {
+  position: relative;
+}
+.background {
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(217, 217, 217, 0.5);
+  position: relative;
+}
+
+.bookviewImg {
+  z-index: 7;
+  width: 1050px;
+  position: fixed;
+  top: 60px;
+  left: 210px;
+}
+
+.bookviewSmallimg {
+  width: 230px;
+  z-index: 8;
+  top: 190px;
+  left: 620px;
+
+  position: absolute;
+}
+
+.bookviewName {
+  z-index: 9;
+
+  top: 440px;
+  left: 630px;
+
+  font-size: 36px;
+  position: absolute;
+}
+.bookviewText {
+  word-break: keep-all;
+  width: 365px;
+  z-index: 9;
+
+  top: 510px;
+  left: 555px;
+
+  font-size: 28px;
+  position: absolute;
+}
+.bookview {
+  position: relative;
+}
+
+.bookviewFishBtn {
+  width: 90px;
+  height: 45px;
+
+  border: 0;
+  font-size: 22px;
+  border-radius: 15px;
+  cursor: pointer;
+
+  top: 700px;
+  left: 870px;
+  z-index: 10;
+  position: absolute;
+}
+
+.waterBoard {
+  width: 800px;
+  left: 310px;
+  position: fixed;
+}

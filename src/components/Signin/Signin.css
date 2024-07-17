@@ -1,0 +1,27 @@
+.signInBack {
+  text-align: center;
+  position: relative;
+}
+.cacaoBtn {
+  width: 424px;
+  height: 67px;
+
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+
+  top: 480px;
+  left: 520px;
+
+  z-index: 1;
+  background-color: #f8e00e;
+
+  position: absolute;
+}
+
+.signInBackImg {
+  width: 1410px;
+  right: 40px;
+  position: fixed;
+}

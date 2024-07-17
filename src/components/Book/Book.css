@@ -1,0 +1,46 @@
+.bookBackImg {
+  height: 800px;
+  right: 120px;
+  position: fixed;
+}
+
+.bookImg {
+  width: 1020px;
+  top: 175px;
+  left: 275px;
+
+  position: relative;
+  /* background-color: aqua; */
+  > img {
+    width: 230px;
+    margin-right: 90px;
+    margin-bottom: 45px;
+    cursor: pointer;
+  }
+}
+
+.Bookbtn {
+  width: 230px;
+  margin-right: 90px;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.bottomBtn {
+  top: 550px;
+  position: fixed;
+}
+
+.backBtn {
+  width: 100px;
+  height: 40px;
+
+  font-size: 17px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  top: 170px;
+  left: 220px;
+  position: absolute;
+}

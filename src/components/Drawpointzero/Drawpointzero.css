@@ -1,0 +1,26 @@
+.Drawpointzero {
+  position: relative;
+}
+
+.Pointzero {
+  z-index: 4;
+  top: 230px;
+  left: 420px;
+  position: absolute;
+}
+
+.pointzeroBtn {
+  width: 70px;
+  height: 35px;
+
+  font-size: 18px;
+  border: 1px solid rgba(156, 105, 79, 0.173);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 248, 230);
+
+  top: 540px;
+  left: 900px;
+  z-index: 10;
+  position: absolute;
+}

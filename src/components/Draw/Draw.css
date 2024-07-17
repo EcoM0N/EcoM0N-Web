@@ -1,0 +1,32 @@
+.Drawback {
+  left: 110px;
+  position: fixed;
+}
+
+.Drawballbtn {
+  top: 275px;
+  left: 635px;
+  cursor: pointer;
+  position: fixed;
+  transition: all ease 1s;
+}
+
+.Coin {
+  z-index: 9;
+  right: 20px;
+  position: fixed;
+}
+
+.DrawbackBtn {
+  width: 100px;
+  height: 40px;
+
+  font-size: 17px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  top: 700px;
+  left: 120px;
+  position: absolute;
+}

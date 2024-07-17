@@ -1,0 +1,96 @@
+.mainBackImg {
+  width: 1470px;
+  left: 15px;
+  position: fixed;
+}
+
+.btnBox {
+  width: 200px;
+
+  top: 130px;
+  left: 1240px;
+
+  z-index: 1;
+  position: relative;
+}
+.btn {
+  width: 140px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.waterL {
+  top: 710px;
+  left: 370px;
+  font-size: 32px;
+  position: absolute;
+}
+.waterbtn {
+  left: 20px;
+  width: 110px;
+  position: absolute;
+}
+.waveback {
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+  display: inline-block;
+  width: 500px;
+  height: 400px;
+
+  bottom: 7%;
+  left: 41%;
+  margin-left: -150px;
+
+  position: absolute;
+  border-radius: 44%;
+
+  /* transform: translate(5px) rotate(5deg); */
+  z-index: 9;
+}
+
+.wave {
+  z-index: 10;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0.1%;
+  left: 12%;
+  background: #0af;
+  width: 700px;
+  height: 700px;
+  top: 5%;
+  border-radius: 43%;
+
+  margin-left: -150px;
+  animation: drift 4s infinite linear;
+}
+
+@keyframes drift {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.Greenfish {
+  width: 150px;
+
+  top: 580px;
+  left: 630px;
+  z-index: 10;
+  position: absolute;
+  animation: fishMove 3s infinite ease-in-out;
+}
+
+@keyframes fishMove {
+  0% {
+    transform: translateY(20px);
+    left: 560px;
+  }
+  50% {
+    left: 700px;
+    transform: translateY(60px);
+  }
+  100% {
+    left: 560px;
+    transform: translateY(20px);
+  }
+}
