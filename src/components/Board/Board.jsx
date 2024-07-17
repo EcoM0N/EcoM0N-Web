@@ -16,17 +16,19 @@ const Board = () => {
 
     if (isValid) {
       try {
-        await axios.post("/api/board", {
-          dishwashingTime,
-          laundryTime,
-          showerTime,
+        await axios.post("http://localhost:8080/ecom0n/main/board", {
+          shower: parseFloat(showerTime),
+          cloth: parseFloat(laundryTime),
+          dish: parseFloat(dishwashingTime),
         });
 
+        alert("데이터가 성공적으로 전송되었습니다.");
         setDishwashingTime("");
         setLaundryTime("");
         setShowerTime("");
       } catch (error) {
         console.error("Error sending data to server:", error);
+        alert("데이터 전송에 실패했습니다.");
       }
     }
   };
@@ -34,19 +36,19 @@ const Board = () => {
   const validateInputs = () => {
     let isValid = true;
 
-    if (isNaN(dishwashingTime)) {
+    if (isNaN(parseFloat(dishwashingTime))) {
       alert("설거지 시간에 문자가 포함되어 있습니다.");
       setDishwashingTime("");
       isValid = false;
     }
 
-    if (isNaN(laundryTime)) {
+    if (isNaN(parseFloat(laundryTime))) {
       alert("세탁 시간에 문자가 포함되어 있습니다.");
       setLaundryTime("");
       isValid = false;
     }
 
-    if (isNaN(showerTime)) {
+    if (isNaN(parseFloat(showerTime))) {
       alert("샤워 시간에 문자가 포함되어 있습니다.");
       setShowerTime("");
       isValid = false;
@@ -85,7 +87,7 @@ const Board = () => {
         <button type="submit" className="waterBoardBtn">
           확인
         </button>
-        <Link to={`/Main`}>
+        <Link to="/Main">
           <button className="waterbackbtn">뒤로가기</button>
         </Link>
       </form>

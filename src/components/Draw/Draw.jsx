@@ -4,18 +4,31 @@ import "./Draw.css";
 import Drawback from "../../assets/image/Drawback.png";
 import Drawballbtn from "../../assets/image/Drawballbtn.png";
 import Coin from "../../assets/image/Coin.png";
+import axios from "axios";
 
 const Draw = () => {
-  const [coins, setCoins] = useState(20); // 초기 코인 수
+  const [coins, setCoins] = useState(20); // 초기 코인 수는 0으로 설정
   const [isRotated, setIsRotated] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchCoins = async () => {
+      try {
+        const response = await axios.get("임시");
+        setCoins(response.data.coins);
+      } catch (error) {
+        console.error("데이터를 불러오는 중 오류가 발생했습니다.", error);
+      }
+    };
+    fetchCoins();
+  }, []);
 
   const handleImageClick = () => {
     // 코인 감소 로직
     const newCoins = coins - 10;
     if (newCoins < 10) {
-      navigate("/Drawpointzero"); // 코인이 10 미만이면 Drawpointzero 페이지로 이동
+      navigate("/Drawpoint");
     } else {
       setCoins(newCoins);
       setIsRotated(true);

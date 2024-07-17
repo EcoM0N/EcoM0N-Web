@@ -9,13 +9,15 @@
   text-align: center;
 }
 .pish {
+  max-width: 300px;
   z-index: 9;
-  top: 200px;
-  left: 450px;
+  top: 290px;
+  left: 550px;
   position: fixed;
 }
+
 .pishText {
-  top: 570px;
+  top: 540px;
   right: 20px;
   font-size: 50px;
   font-weight: bold;

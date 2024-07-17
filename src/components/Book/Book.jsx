@@ -42,7 +42,6 @@ const Book = () => {
   const handleImageClick = (index) => {
     navigate(`/Book/view`);
   };
-  ///${index}
 
   return (
     <div>
