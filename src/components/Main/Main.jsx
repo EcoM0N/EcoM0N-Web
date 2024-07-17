@@ -7,7 +7,7 @@ import Mypagebtn from "../../assets/image/Mypagebtn.png";
 import Bookbtn from "../../assets/image/Bookbtn.png";
 import Water from "../../assets/image/Water.png";
 import { Link } from "react-router-dom";
-import Greenfish from "../../assets/image/Greenfish.png";
+import Onefish from "../../assets/image/1.png";
 
 const Main = () => {
   const [waveTop, setWaveTop] = useState(0);
@@ -30,7 +30,7 @@ const Main = () => {
       <span className="waveback">
         <span className="wave" style={{ top: `${waveTop}%` }}></span>
       </span>
-      <img className="Greenfish" src={Greenfish} alt="물고기" />
+      <img className="Greenfish" src={Onefish} alt="물고기" />
       <img className="mainBackImg" src={Mainback} alt="Main 화면 이미지" />
       <div className="btnBox">
         <Link className="btn" to={`/Draw`}>
@@ -46,7 +46,7 @@ const Main = () => {
           <img className="btn waterbtn" src={Water} alt="물 사용 게시판버튼" />
         </Link>
       </div>
-      <p className="waterL">0%</p>
+      <p className="waterL">{`${100 - waveTop}%`}</p>
     </div>
   );
 };

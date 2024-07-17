@@ -10,8 +10,8 @@ const Mypage = () => {
   return (
     <div>
       <div className="mypage">
-        <p className="myPageID">아이디 더미</p>
-        <p className="myPageP">금액</p>
+        <p className="myPageID">LeeYeeJin</p>
+        <p className="myPageP">20</p>
         <div className="myPageBtnImg">
           <Link to={`/Book`}>
             <img className="Bookbtn" src={Bookbtn} alt="도감 이미지" />

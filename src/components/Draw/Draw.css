@@ -30,3 +30,11 @@
   left: 120px;
   position: absolute;
 }
+
+.CoinText {
+  z-index: 10;
+  font-size: 32px;
+  top: 55px;
+  left: 1210px;
+  position: absolute;
+}

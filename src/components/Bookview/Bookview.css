@@ -11,7 +11,7 @@
 }
 
 .bookviewImg {
-  z-index: 7;
+  z-index: 9;
   width: 1050px;
   position: fixed;
   top: 60px;
@@ -20,17 +20,17 @@
 
 .bookviewSmallimg {
   width: 230px;
-  z-index: 8;
-  top: 190px;
+  z-index: 10;
+  top: 250px;
   left: 620px;
 
   position: absolute;
 }
 
 .bookviewName {
-  z-index: 9;
+  z-index: 10;
 
-  top: 440px;
+  top: 450px;
   left: 630px;
 
   font-size: 36px;
@@ -39,7 +39,7 @@
 .bookviewText {
   word-break: keep-all;
   width: 365px;
-  z-index: 9;
+  z-index: 10;
 
   top: 510px;
   left: 555px;
@@ -48,6 +48,7 @@
   position: absolute;
 }
 .bookview {
+  z-index: 10;
   position: relative;
 }
 

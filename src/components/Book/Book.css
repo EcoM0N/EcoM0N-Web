@@ -1,29 +1,7 @@
 .bookBackImg {
   height: 800px;
-  right: 120px;
+  right: 160px;
   position: fixed;
-}
-
-.bookImg {
-  width: 1020px;
-  top: 175px;
-  left: 275px;
-
-  position: relative;
-  /* background-color: aqua; */
-  > img {
-    width: 230px;
-    margin-right: 90px;
-    margin-bottom: 45px;
-    cursor: pointer;
-  }
-}
-
-.Bookbtn {
-  width: 230px;
-  margin-right: 90px;
-  margin-bottom: 45px;
-  cursor: pointer;
 }
 
 .bottomBtn {
@@ -43,4 +21,55 @@
   top: 170px;
   left: 220px;
   position: absolute;
+}
+
+.Bookbook {
+  top: 100px;
+  left: 260px;
+
+  z-index: 8;
+  width: 1000px;
+  position: fixed;
+
+  > img {
+    width: 190px;
+    margin-right: 140px;
+    margin-top: 125px;
+    cursor: pointer;
+  }
+}
+
+.Paging {
+  width: 100px;
+  position: relative;
+  top: 700px;
+  left: 600px;
+}
+.PagingBtn {
+  white-space: pre;
+  cursor: pointer;
+  position: relative;
+}
+
+.pagination {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  > * {
+    cursor: pointer;
+  }
+}
+
+.pagination__link {
+  transition: all 0.25s;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.pagination__link__active {
+  background-color: #bbb;
+  color: #fefefe;
 }

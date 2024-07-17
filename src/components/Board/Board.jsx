@@ -12,28 +12,47 @@ const Board = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (isNaN(dishwashingTime) || isNaN(laundryTime) || isNaN(showerTime)) {
-      alert("숫자만 입력해주세요");
+    const isValid = validateInputs();
+
+    if (isValid) {
+      try {
+        await axios.post("/api/board", {
+          dishwashingTime,
+          laundryTime,
+          showerTime,
+        });
+
+        setDishwashingTime("");
+        setLaundryTime("");
+        setShowerTime("");
+      } catch (error) {
+        console.error("Error sending data to server:", error);
+      }
+    }
+  };
+
+  const validateInputs = () => {
+    let isValid = true;
+
+    if (isNaN(dishwashingTime)) {
+      alert("설거지 시간에 문자가 포함되어 있습니다.");
       setDishwashingTime("");
-      setLaundryTime("");
-      setShowerTime("");
-      return;
+      isValid = false;
     }
 
-    //임시
-    try {
-      await axios.post("/api/board", {
-        dishwashingTime,
-        laundryTime,
-        showerTime,
-      });
-
-      setDishwashingTime("");
+    if (isNaN(laundryTime)) {
+      alert("세탁 시간에 문자가 포함되어 있습니다.");
       setLaundryTime("");
-      setShowerTime("");
-    } catch (error) {
-      console.error("Error sending data to server:", error);
+      isValid = false;
     }
+
+    if (isNaN(showerTime)) {
+      alert("샤워 시간에 문자가 포함되어 있습니다.");
+      setShowerTime("");
+      isValid = false;
+    }
+
+    return isValid;
   };
 
   return (

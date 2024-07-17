@@ -45,17 +45,17 @@
 
 .myPageID {
   z-index: 9;
-  top: 420px;
-  left: 550px;
-  font-size: 20px;
+  top: 415px;
+  left: 530px;
+  font-size: 32px;
 
   position: absolute;
 }
 .myPageP {
   z-index: 9;
-  font-size: 30px;
+  font-size: 36px;
   top: 530px;
-  left: 600px;
+  left: 615px;
 
   position: absolute;
 }
